@@ -175,12 +175,12 @@ header {
 }
 
 header img {
-    height: 20px; /* adapte si ton logo est trop petit/grand */
+    height: 20px; 
 }
 
 header nav {
     display: flex;
-    gap: 60px; /* espace entre Hébergements / Activités */
+    gap: 60px; 
 }
 
 header nav a {
@@ -207,7 +207,7 @@ header nav a:hover {
 /* Version mobile */
 @media (max-width: 767.98px) {
     .main-container {
-        padding: 0; /* comme sur la maquette mobile */
+        padding: 0; 
     }
 
     header {
