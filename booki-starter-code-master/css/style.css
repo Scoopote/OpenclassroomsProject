@@ -245,8 +245,6 @@ main {
 
 .hebergements-cards .card {
     display: flex;
-    /* flex-direction: column; */
-    /* height: 200px; */
     padding: 0;
     flex-wrap: wrap;
 }
