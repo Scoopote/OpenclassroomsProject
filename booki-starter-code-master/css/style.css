@@ -75,14 +75,9 @@ header {
   align-items: center;
   padding: 25px 0;
   margin-bottom: 30px;
-  /* * pour que le header reste en haut lors du scroll */
-  /* * sticky permet de fixer un élément  */
   position: sticky;
-  /* * top permet de définir la position de l'élément sticky et a partir de quel point il est fixé par rapport au top de la page*/
-  /* * le header est tout en haut donc il ne peut y avoir que top 0 */
   top: 0;
   background-color: white;
-  /* * z-index permet de définir la superposition des éléments plus il est élevé plus l'élément est au premier plan */
   z-index: 99;
 }
 
@@ -291,7 +286,6 @@ main {
 .show-more {
   display: inline-block;
   background-color: var(--main-bg-color);
-  /* color: var(--main-color); */
   padding: 15px 25px;
   border-radius: 50px;
   font-weight: 700;
@@ -508,23 +502,19 @@ footer {
   }
 
   header nav {
-    /* gap: 30px; */
-    /* * space-evenly pour espacer les liens de manière égale et avec une largeur à 100%  pour que nav occupe tout l'sepace du header*/
     justify-content: space-evenly;
     width: 100%;
   }
 
   header nav a {
-    /* * j'ai juste augmenté la taille de la police pour que ça ressemble plus à la maquette */
     font-size: 18px;
     padding-top: 0;
     padding-bottom: 5px;
     border-top: none;
     border-bottom: 2px solid transparent;
-    /* * pour que les liens occupe toute la largeur */
     width: 100%;
   }
-  /* * le hover existe pas en mobile */
+  /* * le hover n'éxiste pas en mobile */
   /* header nav a:hover {
     border-bottom-color: var(--main-color);
 
@@ -545,12 +535,10 @@ footer {
 
   .search-bar {
     max-width: 100%;
-    /* * suppression de flex-direction:column; */
   }
 
   .search-icon {
     border-radius: 15px 0 0 15px;
-    /* *changement de la width pour que ça prenne moins de place */
     width: 10%;
     height: 60px;
     margin: 0 auto;
@@ -560,7 +548,6 @@ footer {
     border-radius: 0;
     border-left: 1px solid var(--main-bg-color);
     margin: 0;
-    /* *changement de la width pour que ça prenne plus de place */
     width: 80%;
     box-sizing: border-box;
   }
@@ -579,9 +566,7 @@ footer {
   }
   .search-bar button {
     border-radius: 0 15px 15px 0;
-    /* *changement de la width pour que ça prenne moins de place */
     width: 10%;
-    /* *on retire le padding pour que l'icône soit bien centrée */
     padding: 0;
   }
 
@@ -592,8 +577,6 @@ footer {
   }
 
   .filters-list {
-    /* justify-content: flex-start; */
-    /* *transforme en grille comme la maquette */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -609,16 +592,14 @@ footer {
   /* hebergements + populaires */
 
   .hebergements-and-populaires {
-    /* *collumn reverse pour inverser l'ordre des sections */
     flex-direction: column-reverse;
-    /* * gap pour espacer les sections */
     gap: 3rem;
   }
   /* populaires */
   .populaires-cards {
     flex-direction: column;
   }
-  /* *agrandi la largeur  */
+  
   .populaires-cards a {
     width: 100%;
   }
@@ -630,12 +611,10 @@ footer {
   .hebergements {
     background: none !important;
   }
-  /* * on met une colonne  */
+  
   .hebergements-cards {
     grid-template-columns: 1fr;
   }
-
-  /** on adapte la taille pour la colonne */
 
   .hebergements-cards .card {
     height: auto;
